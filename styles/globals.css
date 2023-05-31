@@ -30,3 +30,11 @@ a {
   transform: scale(1.1);
   filter: drop-shadow(0 0 5px #0d9488);
 }
+
+.group:hover > div {
+  filter: brightness(75%);
+  filter: drop-shadow(0 0 5px #0d9488);
+}
+.group:hover > div svg {
+  transform: scale(1.2);
+}

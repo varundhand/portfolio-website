@@ -4,6 +4,7 @@ import {
   AiFillLinkedin,
   AiFillYoutube,
   AiFillGithub,
+  AiOutlineGlobal,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
@@ -57,7 +58,7 @@ export default function Home() {
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
               Web Developer
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl ">
+            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl font-mono">
               Freelancer providing services for programming and design content
               needs. Join me down below and let's get cracking!
             </p>
@@ -160,7 +161,22 @@ export default function Home() {
         </section> */}
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
+            <h3 className="text-3xl py-1 dark:text-white ">SKILLS</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Since the beginning of my journey as a freelance designer and
+              developer, I've done remote work for
+              <span className="text-teal-500"> agencies </span>
+              consulted for <span className="text-teal-500">startups </span>
+              and collaborated with talanted people to create digital products
+              for both business and consumer use.
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              I offer from a wide range of services, including brand design,
+              programming and teaching.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-3xl py-1 dark:text-white ">PROJECTS</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
@@ -175,59 +191,94 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web1}
-              />
+            <div className="basis-1/3 flex-1 relative">
+              <div className="group">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={web1}
+                />
+                <div className="absolute top-4 right-4 flex gap-3">
+                  <a href="">
+                    <AiFillGithub
+                      className="text-5xl"
+                      title="Github Repo Link"
+                    />
+                  </a>
+                  <a href="">
+                    {/* TODO: add title */}
+                    <AiOutlineGlobal className="text-5xl" title="" />
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web2}
-              />
+            <div className="basis-1/3 flex-1 relative">
+              <div className="group">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={web1}
+                />
+                <div className="absolute top-4 right-4 flex gap-3">
+                  <a href="">
+                    <AiFillGithub
+                      className="text-5xl"
+                      title="Github Repo Link"
+                    />
+                  </a>
+                  <a href="">
+                    <AiOutlineGlobal className="text-5xl" />
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web3}
-              />
+            <div className="basis-1/3 flex-1 relative">
+              <div className="group">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={web1}
+                />
+                <div className="absolute top-4 right-4 flex gap-3">
+                  <a href="">
+                    <AiFillGithub
+                      className="text-5xl"
+                      title="Github Repo Link"
+                    />
+                  </a>
+                  <a href="">
+                    <AiOutlineGlobal className="text-5xl" />
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web4}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web5}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
-              />
+            <div className="basis-1/3 flex-1 relative">
+              <div className="group">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={web1}
+                />
+                <div className="absolute top-4 right-4 flex gap-3">
+                  <a href="">
+                    <AiFillGithub
+                      className="text-5xl"
+                      title="Github Repo Link"
+                    />
+                  </a>
+                  <a href="">
+                    <AiOutlineGlobal className="text-5xl" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
