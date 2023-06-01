@@ -38,3 +38,87 @@ a {
 .group:hover > div svg {
   transform: scale(1.2);
 }
+
+/* toolkit */
+#toolkit ul.wrapper-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-template-rows: 100px;
+  grid-gap: 4rem;
+  justify-items: center;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+#toolkit ul.wrapper-skills li svg {
+  transition: 0.5s;
+  display: inline-block;
+  width: 3.5em;
+}
+#toolkit ul.wrapper-skills li svg:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+#toolkit ul.wrapper-skills li svg path {
+  fill: white;
+}
+#toolkit ul.wrapper-skills li h3 {
+  margin-top: 5px;
+  font-weight: 100;
+  text-shadow: 2px 3px 7px rgba(255, 255, 255, 0.4);
+}
+#toolkit ul.wrapper-skills .html5 path, #toolkit ul.wrapper-skills .html5:hover path {
+  fill: #e44c25;
+}
+#toolkit ul.wrapper-skills .css3 path, #toolkit ul.wrapper-skills .css3:hover path {
+  fill: #2795d3;
+}
+#toolkit ul.wrapper-skills .sass path, #toolkit ul.wrapper-skills .sass:hover path {
+  fill: #cf649a;
+}
+#toolkit ul.wrapper-skills .bootstrap path, #toolkit ul.wrapper-skills .bootstrap:hover path {
+  fill: #9400d3;
+}
+#toolkit ul.wrapper-skills .javascript path, #toolkit ul.wrapper-skills .javascript:hover path {
+  fill: #f7df1c;
+}
+#toolkit ul.wrapper-skills .typescript path, #toolkit ul.wrapper-skills .typescript:hover path {
+  fill: #106ab0;
+}
+#toolkit ul.wrapper-skills .react path, #toolkit ul.wrapper-skills .react:hover path {
+  fill: #61dbfb;
+}
+#toolkit ul.wrapper-skills .redux path, #toolkit ul.wrapper-skills .redux:hover path {
+  fill: #764abc;
+}
+#toolkit ul.wrapper-skills .node path, #toolkit ul.wrapper-skills .node:hover path {
+  fill: #00a86b;
+}
+#toolkit ul.wrapper-skills .express path, #toolkit ul.wrapper-skills .express:hover path {
+  fill: grey;
+}
+#toolkit ul.wrapper-skills .mongodb path, #toolkit ul.wrapper-skills .mongodb:hover path {
+  fill: #4db33d;
+}
+#toolkit ul.wrapper-skills .graphql path, #toolkit ul.wrapper-skills .graphql:hover path {
+  fill: #e535ab;
+}
+#toolkit ul.wrapper-skills .git path, #toolkit ul.wrapper-skills .git:hover path {
+  fill: #e44c25;
+}
+#toolkit ul.wrapper-skills .webpack path, #toolkit ul.wrapper-skills .webpack:hover path {
+  fill: #8ed5fa;
+}
+#toolkit ul.wrapper-skills .github path, #toolkit ul.wrapper-skills .github:hover path {
+  fill: #6f42c1;
+}
+#toolkit ul.wrapper-skills .vscode path, #toolkit ul.wrapper-skills .vscode:hover path {
+  fill: #0078d7;
+}
+#toolkit ul.wrapper-skills .amazonaws path, #toolkit ul.wrapper-skills .amazonaws:hover path {
+  fill: #f90;
+}
+#toolkit ul.wrapper-skills .elixir path, #toolkit ul.wrapper-skills .elixir:hover path {
+  fill: #6f517a;
+}
