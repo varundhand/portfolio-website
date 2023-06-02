@@ -118,7 +118,6 @@ export default function Toolkit() {
   
   return (
     <section id="toolkit" className="container">
-      <h1 className="section-title">My Toolkit</h1>
       <motion.ul
         className="wrapper-skills"
         variants={containerVariant}
