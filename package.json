@@ -14,11 +14,12 @@
     "framer-motion": "^4.1.2",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
-    "next": "12.3.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "^12.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
-    "react-intersection-observer": "^8.31.0"
+    "react-intersection-observer": "^8.31.0",
+    "react-svg": "^16.1.15"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.0.1",

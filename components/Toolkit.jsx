@@ -21,31 +21,33 @@ import WEBPACK from '../public/svg/webpack.svg';
 import NODE from '../public/svg/node.svg';
 import TYPESCRIPT from '../public/svg/typescript.svg';
 import VSCODE from '../public/svg/vscode.svg';
+import TAILWIND from '../public/svg/tailwind.svg'
+import DJANGO from '../public/svg/django.svg'
+import PYTHON from '../public/svg/python.svg'
 
 
 console.log(VSCODE);
 
-export default function Toolkit() {
+export default function Toolkit({darkMode}) {
   const skills = {
     // ReArrange Skills
     HTML5,
     CSS3,
     SASS,
     BOOTSTRAP,
+    TAILWIND,
+    PYTHON,
     JAVASCRIPT,
     TYPESCRIPT,
     REACT,
     REDUX,
-    NODE,
-    EXPRESS,
-    MONGODB,
-    GRAPHQL,
+    DJANGO,
     GIT,
     GITHUB,
     VSCODE,
-    WEBPACK,
-    AMAZONAWS,
-    ELIXIR,
+    // WEBPACK,
+    // AMAZONAWS,
+    // ELIXIR,
   };
   
   // * Hooks
@@ -117,6 +119,7 @@ export default function Toolkit() {
   };
   
   return (
+    <div className={darkMode ? 'dark' : ''} >
     <section id="toolkit" className="container">
       <motion.ul
         className="wrapper-skills"
@@ -128,10 +131,11 @@ export default function Toolkit() {
         {map(skillsToBeDisplayed, (Skill, key) => (
             <motion.li key={key} variants={skillVariant}>
               <Skill className={`${key.toLowerCase()}`} />
-              <h3>{key}</h3>
+              <h3 className='dark:text-white'>{key}</h3>
             </motion.li>
         ))}
       </motion.ul>
     </section>
+    </div>
   );
 }

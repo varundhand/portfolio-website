@@ -8,7 +8,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+   }
 
 a {
   color: inherit;
@@ -121,4 +121,20 @@ a {
 }
 #toolkit ul.wrapper-skills .elixir path, #toolkit ul.wrapper-skills .elixir:hover path {
   fill: #6f517a;
+}
+
+/* .blob1{
+  position: absolute;
+  width: 500px;
+  opacity: .1;
+  left: 36%;
+  top: 5%;
+  z-index: 1;
+} */
+
+.russo-one{
+  font-family: 'Russo One', sans-serif;
+}
+.acme{
+  font-family: 'Acme', sans-serif;
 }
