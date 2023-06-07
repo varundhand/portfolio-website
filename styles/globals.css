@@ -2,7 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (max-width: 550px) {
+@media (max-width: 374px) {
+  .profile{
+    width: 250px;
+    height: 250px;
+  }
+  .john {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+  .mayer {
+    font-size: .8rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 551px) {
+  .profile{
+    width: 250px;
+    height: 250px;
+  }
   .john {
     font-size: 1.2rem;
     margin-bottom: 0;
@@ -12,7 +37,7 @@
     padding-bottom: 0;
     margin-bottom: 0;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -124,6 +149,7 @@
   .john {
     font-size: 2rem;
     margin-bottom: 0;
+    margin-bottom: 1rem;
   }
   .mayer {
     font-size: 1.4rem;
@@ -141,9 +167,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-   }
+  }
+
 
 a {
   color: inherit;
@@ -152,10 +179,15 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: Roboto;
 }
 @font-face {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
+}
+
+main {
+  font-family: Roboto;
 }
 
 .enlarge {
@@ -236,14 +268,11 @@ a {
 #toolkit ul.wrapper-skills .mongodb path, #toolkit ul.wrapper-skills .mongodb:hover path {
   fill: #4db33d;
 }
-#toolkit ul.wrapper-skills .graphql path, #toolkit ul.wrapper-skills .graphql:hover path {
-  fill: #e535ab;
-}
 #toolkit ul.wrapper-skills .git path, #toolkit ul.wrapper-skills .git:hover path {
   fill: #e44c25;
 }
-#toolkit ul.wrapper-skills .webpack path, #toolkit ul.wrapper-skills .webpack:hover path {
-  fill: #8ed5fa;
+#toolkit ul.wrapper-skills .django path, #toolkit ul.wrapper-skills .django:hover path {
+  fill: #2aa473;
 }
 #toolkit ul.wrapper-skills .github path, #toolkit ul.wrapper-skills .github:hover path {
   fill: #6f42c1;
@@ -251,11 +280,16 @@ a {
 #toolkit ul.wrapper-skills .vscode path, #toolkit ul.wrapper-skills .vscode:hover path {
   fill: #0078d7;
 }
-#toolkit ul.wrapper-skills .amazonaws path, #toolkit ul.wrapper-skills .amazonaws:hover path {
-  fill: #f90;
+#toolkit ul.wrapper-skills .python path,
+#toolkit ul.wrapper-skills .python:hover path {
+  fill: #206caa; /* Blue color */
 }
-#toolkit ul.wrapper-skills .elixir path, #toolkit ul.wrapper-skills .elixir:hover path {
-  fill: #6f517a;
+
+#toolkit ul.wrapper-skills .python-2 {
+  fill: #FFE052; /* Yellow color */
+}
+#toolkit ul.wrapper-skills .tailwind path, #toolkit ul.wrapper-skills .tailwind:hover path {
+  fill: #06b0cd;
 }
 
 /* .blob1{
@@ -268,8 +302,90 @@ a {
 } */
 
 .russo-one{
-  font-family: 'Russo One', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 .acme{
-  font-family: 'Acme', sans-serif;
+  font-family: Roboto, sans-serif;
+}
+
+/* Footer */
+
+footer {
+  /* position: relative; */
+  /* bottom: 0px; */
+  /* overflow: hidden; */
+  /* height: 180px; */
+  /* color: black; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+}
+footer h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+  /* bottom: -25px; */
+  white-space: nowrap;
+  color: black;
+}
+footer h2 #heart {
+  position: relative;
+  top: 8px;
+  animation: heartbeat 1s infinite;
+}
+.wave {
+  display: block;
+  position: relative;
+  height: 40px;
+  /* width: 100%; */
+  background: #111827;
+  transform: scale(1, 1);
+}
+
+.wave:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  /* width: 100%; */
+  height: 300px;
+  background-color: white;
+  right: -25%;
+  top: 20px;
+}
+
+.wave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 300px;
+  background-color: #111827;
+  left: -25%;
+  top: -240px;
+  clip-path: ellipse(100% 15% at -15% 100%);
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+ }
+  20% {
+    transform: scale(1);
+ }
+  40% {
+    transform: scale(0.75);
+ }
+  60% {
+    transform: scale(1);
+ }
+  80% {
+    transform: scale(0.75);
+ }
+  100% {
+    transform: scale(0.75);
+ }
 }

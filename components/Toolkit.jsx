@@ -45,53 +45,49 @@ export default function Toolkit({darkMode}) {
     GIT,
     GITHUB,
     VSCODE,
-    // WEBPACK,
-    // AMAZONAWS,
-    // ELIXIR,
   };
   
   // * Hooks
   const animation = useAnimation();    
   const [ref, inView, entry] = useInView({ threshold: 0, triggerOnce: true });
   
-  const [skillsToBeDisplayed, setSkillsToBeDisplayed] = useState({});
   const deviceType = useViewport(); // * Returns the DeviceType Depending on the Width of Viewport
 
-  // * Removes and Adds Skills based on ViewPort Width
-  useEffect(() => {
-    // console.log("Screen Size Changed!", {deviceType});
-    let numOfSkillsRemoved;
-    switch (deviceType) {
-      case deviceTypes.DESKTOP:
-        numOfSkillsRemoved = 2;
-        break;
-      case deviceTypes.WIDE:
-        numOfSkillsRemoved = 2;
-        break;
-      case deviceTypes.PHABLET:
-        numOfSkillsRemoved = 0;
-        break;
-      case deviceTypes.PHONE:
-        numOfSkillsRemoved = 0;
-        break;
-      case deviceTypes.TABLET:
-        numOfSkillsRemoved = 3;
-        break;
-      case deviceTypes.LAPTOP:
-        numOfSkillsRemoved = 4;
-        break;
-      default:
-        console.warn('Weird! Screen Size Switch in Default');
-        numOfSkillsRemoved = 0;
-        break;
-      }
+  // // * Removes and Adds Skills based on ViewPort Width
+  // useEffect(() => {
+  //   // console.log("Screen Size Changed!", {deviceType});
+  //   let numOfSkillsRemoved;
+  //   switch (deviceType) {
+  //     case deviceTypes.DESKTOP:
+  //       numOfSkillsRemoved = 2;
+  //       break;
+  //     case deviceTypes.WIDE:
+  //       numOfSkillsRemoved = 2;
+  //       break;
+  //     case deviceTypes.PHABLET:
+  //       numOfSkillsRemoved = 0;
+  //       break;
+  //     case deviceTypes.PHONE:
+  //       numOfSkillsRemoved = 0;
+  //       break;
+  //     case deviceTypes.TABLET:
+  //       numOfSkillsRemoved = 3;
+  //       break;
+  //     case deviceTypes.LAPTOP:
+  //       numOfSkillsRemoved = 4;
+  //       break;
+  //     default:
+  //       console.warn('Weird! Screen Size Switch in Default');
+  //       numOfSkillsRemoved = 0;
+  //       break;
+  //     }
       
-      // * Slice Skills Depending on Screen Size and Store it in State
-      const slicedSkills = Object.fromEntries(
-      Object.entries(skills).slice(0, size(skills) - numOfSkillsRemoved)
-    );
-    setSkillsToBeDisplayed(slicedSkills);
-  }, [useViewport()]);
+  //     // * Slice Skills Depending on Screen Size and Store it in State
+  //     const slicedSkills = Object.fromEntries(
+  //     Object.entries(skills).slice(0, size(skills) - numOfSkillsRemoved)
+  //   );
+  //   setSkillsToBeDisplayed(slicedSkills);
+  // }, [useViewport()]);
 
   // * Starts Animation in the right ViewPort
   useEffect(() => {
@@ -128,7 +124,7 @@ export default function Toolkit({darkMode}) {
         ref={ref}
         initial="initial"
       >
-        {map(skillsToBeDisplayed, (Skill, key) => (
+        {map(skills, (Skill, key) => (
             <motion.li key={key} variants={skillVariant}>
               <Skill className={`${key.toLowerCase()}`} />
               <h3 className='dark:text-white'>{key}</h3>

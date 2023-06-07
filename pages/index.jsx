@@ -22,6 +22,7 @@ import Toolkit from "../components/Toolkit";
 // import Image from "next/image";
 // import { ReactSVG } from "react-svg";
 import Blob1Component from '../public/svg/blob1.svg'
+import Footer from "../components/Footer";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -47,7 +48,7 @@ export default function Home() {
         <main className="px-10 dark:bg-gray-900 md:px-20 lg:px-40">
           <section className="min-h-screen">
             <nav className="py-10 mb-12 flex justify-between dark:text-white">
-              <h1 className="acme text-xl">DevelopedByVroon</h1>
+              <h1 className="text-xl">DevelopedByVroon</h1>
               <ul className="flex items-center">
                 <li>
                   <BsFillMoonStarsFill
@@ -69,7 +70,7 @@ export default function Home() {
               <h2 className="text-5xl py-2 text-teal-600  dark:text-teal-400 md:text-6xl font-bold font-burtons">
                 VARUN DHAND
               </h2>
-              <h3 className="text-2xl py-2 dark:text-white md:text-3xl font-burtons">
+              <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
                 Web Developer
               </h3>
               <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl russo-one">
@@ -108,7 +109,7 @@ export default function Home() {
                   <AiFillGithub className="enlarge" />
                 </a>
               </div>
-              <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 sm:h-48 sm:w-48">
+              <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 profile">
                 <Image src={varun} layout="fill" objectFit="cover" />
               </div>
             </div>
@@ -310,6 +311,7 @@ export default function Home() {
             </div>
           </section>
         </main>
+        {/* <Footer /> */}
       </ViewportProvider>
     </div>
   );
