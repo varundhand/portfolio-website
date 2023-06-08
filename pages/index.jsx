@@ -48,7 +48,7 @@ export default function Home() {
         <main className="px-10 dark:bg-gray-900 md:px-20 lg:px-40">
           <section className="min-h-screen">
             <nav className="py-10 mb-12 flex justify-between dark:text-white">
-              <h1 className="text-xl">DevelopedByVroon</h1>
+              <h1 className="sm:text-sm md:text-base lg:text-2xl font-bold">DevelopedByVroon</h1>
               <ul className="flex items-center">
                 <li>
                   <BsFillMoonStarsFill
@@ -115,23 +115,9 @@ export default function Home() {
             </div>
           </section>
           <section className="py-10">
+          
             <div>
-              <h3 className="text-3xl py-1 dark:text-white ">SKILLS</h3>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                Since the beginning of my journey as a freelance designer and
-                developer, I've done remote work for
-                <span className="text-teal-500"> agencies </span>
-                consulted for <span className="text-teal-500">startups </span>
-                and collaborated with talanted people to create digital products
-                for both business and consumer use.
-              </p>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                I offer from a wide range of services, including brand design,
-                programming and teaching.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-3xl py-1 dark:text-white font-burtons font-bold">SKILLS</h3>
+              <h3 className="text-3xl py-1 pb-5  dark:text-white font-burtons font-bold">SKILLS</h3>
             </div>
             <div className="">
               <Toolkit darkMode={darkMode} />
@@ -154,8 +140,8 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <AiFillGithub
-                        className="text-5xl transition-opacity duration-300 hover:opacity-75"
+                    <AiFillGithub
+                        className="text-4xl transition-transform duration-300 enlarge-glow-github"
                         title="Github Repo Link"
                       />
                     </a>
@@ -165,7 +151,10 @@ export default function Home() {
                       rel="noopener noreferrer"
                     >
                       {/* TODO: add title */}
-                      <AiOutlineGlobal className="text-5xl" title="" />
+                      <AiOutlineGlobal
+                        className="text-4xl transition-transform duration-300 enlarge-glow-global"
+                        title=""
+                      />
                     </a>
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 top-2/3 bg-black bg-opacity-50 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
@@ -198,7 +187,7 @@ export default function Home() {
                       rel="noopener noreferrer"
                     >
                       <AiFillGithub
-                        className="text-5xl"
+                        className="text-4xl transition-transform duration-300 enlarge-glow-github"
                         title="Github Repo Link"
                       />
                     </a>
@@ -207,7 +196,10 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <AiOutlineGlobal className="text-5xl" />
+                      <AiOutlineGlobal
+                        className="text-4xl transition-transform duration-300 enlarge-glow-global"
+                        title=""
+                      />
                     </a>
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 top-2/3 bg-black bg-opacity-50 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
@@ -240,7 +232,7 @@ export default function Home() {
                       rel="noopener noreferrer"
                     >
                       <AiFillGithub
-                        className="text-5xl"
+                        className="text-4xl transition-transform duration-300 enlarge-glow-github"
                         title="Github Repo Link"
                       />
                     </a>
@@ -249,7 +241,10 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <AiOutlineGlobal className="text-5xl" />
+                      <AiOutlineGlobal
+                        className="text-4xl transition-transform duration-300 enlarge-glow-global"
+                        title=""
+                      />
                     </a>
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 top-2/3 bg-black bg-opacity-50 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
@@ -282,7 +277,7 @@ export default function Home() {
                       rel="noopener noreferrer"
                     >
                       <AiFillGithub
-                        className="text-5xl"
+                        className="text-4xl transition-transform duration-300 enlarge-glow-github"
                         title="Github Repo Link"
                       />
                     </a>
@@ -291,7 +286,10 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <AiOutlineGlobal className="text-5xl" />
+                      <AiOutlineGlobal
+                        className="text-4xl transition-transform duration-300 enlarge-glow-global"
+                        title=""
+                      />
                     </a>
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 top-2/3 bg-black bg-opacity-50 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">

@@ -198,12 +198,27 @@ main {
   filter: drop-shadow(0 0 5px #0d9488);
 }
 
+.enlarge-glow-github {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.enlarge-glow-github:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px #0d9488);
+}
+
+.enlarge-glow-global {
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.enlarge-glow-global:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px #0d9488);
+}
+
 .group:hover > div {
   filter: brightness(75%);
   filter: drop-shadow(0 0 5px #0d9488);
-}
-.group:hover > div svg {
-  transform: scale(1.2);
 }
 
 /* toolkit */
@@ -227,9 +242,9 @@ main {
   transition: 0.5s;
   transform: scale(1.1);
 }
-#toolkit ul.wrapper-skills li svg path {
+/* #toolkit ul.wrapper-skills li svg path {
   fill: white;
-}
+} */
 #toolkit ul.wrapper-skills li h3 {
   margin-top: 5px;
   font-weight: 100;
@@ -280,12 +295,11 @@ main {
 #toolkit ul.wrapper-skills .vscode path, #toolkit ul.wrapper-skills .vscode:hover path {
   fill: #0078d7;
 }
-#toolkit ul.wrapper-skills .python path,
-#toolkit ul.wrapper-skills .python:hover path {
-  fill: #206caa; /* Blue color */
+#toolkit ul.wrapper-skills .python-blue {
+  fill: #387EB8; /* Blue color */
 }
 
-#toolkit ul.wrapper-skills .python-2 {
+#toolkit ul.wrapper-skills .python-yellow {
   fill: #FFE052; /* Yellow color */
 }
 #toolkit ul.wrapper-skills .tailwind path, #toolkit ul.wrapper-skills .tailwind:hover path {
