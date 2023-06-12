@@ -173,13 +173,13 @@ export default function Home() {
               </div>
               <div className="basis-1/3 flex-1 relative">
                 <div className="group">
-                  <Image
+                  {/* <Image
                     className="rounded-lg object-cover"
                     width={"100%"}
                     height={"100%"}
                     layout="responsive"
                     src={web2}
-                  />
+                  /> */}
                   <div className="absolute top-4 right-4 flex gap-3">
                     <a
                       href="https://github.com/varundhand/expense-tracker"
