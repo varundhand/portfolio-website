@@ -48,7 +48,7 @@ export default function Home() {
         <main className="px-10 dark:bg-gray-900 md:px-20 lg:px-40">
           <section className="min-h-screen">
             <nav className="py-10 mb-12 flex justify-between dark:text-white">
-              <h1 className="sm:text-sm md:text-base lg:text-2xl font-bold">DevelopedByVroon</h1>
+              <h1 className="sm:text-sm md:text-base lg:text-2xl font-burtons  font-bold ">developedbyvroon</h1>
               <ul className="flex items-center">
                 <li>
                   <BsFillMoonStarsFill
@@ -70,11 +70,11 @@ export default function Home() {
               <h2 className="text-5xl py-2 text-teal-600  dark:text-teal-400 md:text-6xl font-bold font-burtons">
                 VARUN DHAND
               </h2>
-              <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+              <h3 className="text-2xl py-2 dark:text-white md:text-3xl kanit font-semibold">
                 Web Developer
               </h3>
-              <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl russo-one">
-                I'm a sophomore student deeply passionate about web development.
+              <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl kanit">
+                I'm a sophomore student deeply passionate about <span className="text-teal-600">web development</span> .
                 I thrive on the perfect fusion of artistic creativity and
                 technical finesse, crafting websites that captivate and resonate
                 with audiences. Join me down below and let's get cracking!
@@ -119,11 +119,11 @@ export default function Home() {
             <div>
               <h3 className="text-3xl py-1 pb-5  dark:text-white font-burtons font-bold">SKILLS</h3>
             </div>
-            <div className="">
+            <div className="pb-8">
               <Toolkit darkMode={darkMode} />
             </div>
 
-            <h3 className="text-3xl py-1 dark:text-white font-burtons font-bold">PROJECTS</h3>
+            <h3 className="text-3xl pt-1 dark:text-white font-burtons font-bold">PROJECTS</h3>
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
               <div className="basis-1/3 flex-1 relative">
                 <div className="group">
@@ -173,13 +173,13 @@ export default function Home() {
               </div>
               <div className="basis-1/3 flex-1 relative">
                 <div className="group">
-                  {/* <Image
+                  <Image
                     className="rounded-lg object-cover"
                     width={"100%"}
                     height={"100%"}
                     layout="responsive"
                     src={web2}
-                  /> */}
+                  />
                   <div className="absolute top-4 right-4 flex gap-3">
                     <a
                       href="https://github.com/varundhand/expense-tracker"

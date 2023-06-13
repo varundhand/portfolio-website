@@ -181,15 +181,22 @@ a {
   box-sizing: border-box;
   font-family: Roboto;
 }
+
 @font-face {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 }
+@font-face {
+  font-family: "lobsterTwo";
+  src: url("../public/LobsterTwo-Italic.otf");
+}
 
+.kanit{
+  font-family: 'Kanit', sans-serif;
+}
 main {
   font-family: Roboto;
 }
-
 .enlarge {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
