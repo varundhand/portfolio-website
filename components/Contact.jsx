@@ -97,6 +97,7 @@ export default function Contact({darkMode}) {
         variants={screenVariant}
         animate={animation}
         initial="initial"
+        name="contact" method="POST" data-netlify="true"
       >
         {success && 'Thank you, form has been submitted!'}
         {failure && 'Sorry, Something went wrong!'}
@@ -127,8 +128,8 @@ export default function Contact({darkMode}) {
                   <div className="contact">
                     <p>Wanna work together? </p>
                     <p>Send me an email at </p>
-                    <a href="mailto:dhandvaasu@gmail.com" className="email">
-                      dhandvaasu@gmail.com
+                    <a href="mailto:varundhand77@gmail.com" className="email">
+                      varundhand77@gmail.com
                     </a>
                   </div>
                 </motion.div>
