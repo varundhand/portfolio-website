@@ -23,6 +23,7 @@ import Toolkit from "../components/Toolkit";
 // import { ReactSVG } from "react-svg";
 import Blob1Component from '../public/svg/blob1.svg'
 import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -59,7 +60,7 @@ export default function Home() {
                 <li>
                   <a
                     className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                    href="#"
+                    href="/pdf/VarunResume.pdf" target="_blank" rel="noopener noreferrer" 
                   >
                     Resume
                   </a>
@@ -310,6 +311,7 @@ export default function Home() {
           </section>
         </main>
         {/* <Footer /> */}
+        <Contact darkMode={darkMode} />
       </ViewportProvider>
     </div>
   );

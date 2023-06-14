@@ -2,9 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <div>
-    <div className='wave'>
-    </div>
+   <>
       <footer>
         <h2>
           Made with{' '}
@@ -24,6 +22,6 @@ export default function Footer() {
           by Varun Dhand
         </h2>
       </footer>
-    </div>
+   </>
   );
 } 

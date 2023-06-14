@@ -32,6 +32,13 @@ export default function Document() {
         />
       </Head>
       <body>
+        {/* Netlify Forms  */}
+        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+          <input type="text" name="name" />
+          <input type="email" name="email" />
+          <input type="subject" name="subject" />
+          <textarea name="message"></textarea>
+        </form>
         <Main />
         <NextScript />
       </body>
