@@ -127,7 +127,7 @@ export default function Toolkit({darkMode}) {
         {map(skills, (Skill, key) => (
             <motion.li key={key} variants={skillVariant}>
               <Skill className={`${key.toLowerCase()}`} />
-              <h3 className='dark:text-white'>{key}</h3>
+              <h3 className='dark:text-white '>{key}</h3>
             </motion.li>
         ))}
       </motion.ul>

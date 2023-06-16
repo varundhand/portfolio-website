@@ -310,8 +310,8 @@ export default function Home() {
             </div>
           </section>
         </main>
-        {/* <Footer /> */}
-        <Contact darkMode={darkMode} />
+        <Contact className='pb-10' darkMode={darkMode} />
+        <Footer />
       </ViewportProvider>
     </div>
   );

@@ -88,7 +88,7 @@ export default function Contact({darkMode}) {
       },
     },
   };
-
+  console.log(darkMode)
   return (
     <section id="contact">
       <motion.form
@@ -101,10 +101,10 @@ export default function Contact({darkMode}) {
       >
         {success && 'Thank you, form has been submitted!'}
         {failure && 'Sorry, Something went wrong!'}
-        <div className="background">
+        <div className={`background ${darkMode ? "dark" : ""}`}>
           <div className={`container m-5 ${darkMode ? "dark" : ""}`}>
-            <div className="screen dark:bg-red-800">
-              <div className="screen-header">
+            <div className="screen ">
+              <div className={`screen-header  ${darkMode ? "dark" : ""}`}>
                 <div className="screen-header-left">
                   <div className="screen-header-button close"></div>
                   <div className="screen-header-button maximize"></div>
@@ -118,7 +118,7 @@ export default function Contact({darkMode}) {
               </div>
               <div className="screen-body">
                 <motion.div
-                  className="screen-body-item left"
+                  className={`screen-body-item left ${darkMode ? "dark" : ""}`}
                   variants={leftVariant}
                 >
                   <div className="app-title">

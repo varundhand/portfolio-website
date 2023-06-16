@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+
+}
+
 @media (max-width: 374px) {
   .profile{
     width: 250px;
@@ -332,22 +336,22 @@ main {
 /* Footer */
 
 footer {
-  /* position: relative; */
-  /* bottom: 0px; */
-  /* overflow: hidden; */
-  /* height: 180px; */
-  /* color: black; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
+  position: relative;
+  bottom: 0px;
+  overflow: hidden;
+  height: 180px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 footer h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
-  /* bottom: -25px; */
+  position: relative;
+  bottom: -25px;
   white-space: nowrap;
   color: black;
 }
@@ -414,15 +418,16 @@ footer h2 #heart {
 /* CONTACT FORM */
 #contact {
   overflow: hidden;
-  max-width: 700px;
+  max-width: 100%;
   margin: 0 auto;
 }
 #contact .background {
   display: flex;
   min-height: 80vh;
-  padding: 20px;
+  padding: 44px;
 }
 #contact .container {
+  width: 700px;
   margin: auto;
   padding: 10px;
 }
@@ -585,8 +590,14 @@ footer h2 #heart {
 .button-transparent:hover {
   transform: translateY(-3px);
   box-shadow: 0 0 10px 2px #0d9488; /* Replace 'violet' with your desired glow color */
-  background-color: #303642; /* Replace 'your-hover-color' with your desired hover background color */
+  background-color: #4a4f59; /* Replace 'your-hover-color' with your desired hover background color */
   color: whitesmoke; /* Replace 'your-hover-text-color' with your desired hover text color */
+}
+.background.dark {
+  background-color:#111827 ;
+}
+#contact.screen-header.dark{
+  background-color: red;
 }
 @media screen and (max-width: 768px) {
   #contact .screen-body {
