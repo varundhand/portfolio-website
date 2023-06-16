@@ -102,7 +102,7 @@ export default function Contact({darkMode}) {
         {success && 'Thank you, form has been submitted!'}
         {failure && 'Sorry, Something went wrong!'}
         <div className="background">
-          <div className={`container ${darkMode ? "dark" : ""}`}>
+          <div className={`container m-5 ${darkMode ? "dark" : ""}`}>
             <div className="screen dark:bg-red-800">
               <div className="screen-header">
                 <div className="screen-header-left">
@@ -122,13 +122,13 @@ export default function Contact({darkMode}) {
                   variants={leftVariant}
                 >
                   <div className="app-title">
-                    <span>CONTACT</span>
-                    <span>ME</span>
+                    <span className='kanit font-semibold'>CONTACT</span>
+                    <span className='kanit font-semibold'>ME</span>
                   </div>
                   <div className="contact">
-                    <p>Wanna work together? </p>
-                    <p>Send me an email at </p>
-                    <a href="mailto:varundhand77@gmail.com" className="email">
+                    <p className='kanit'>Wanna work together? </p>
+                    <p className='kanit'>Send me an email at </p>
+                    <a href="mailto:varundhand77@gmail.com" className="email kanit">
                       varundhand77@gmail.com
                     </a>
                   </div>
@@ -182,14 +182,14 @@ export default function Contact({darkMode}) {
                     </div>
                     <div className="app-form-group buttons">
                       <button
-                        className="app-form-button button-transparent"
+                        className="app-form-button button-transparent kanit"
                         type="button"
                         onClick={() => setFormState(initialState)}
                       >
                         CLEAR
                       </button>
                       <button
-                        className="app-form-button button-purple"
+                        className="app-form-button button-transparent kanit"
                         type="submit"
                       >
                         SEND

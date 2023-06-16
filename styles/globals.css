@@ -414,10 +414,13 @@ footer h2 #heart {
 /* CONTACT FORM */
 #contact {
   overflow: hidden;
+  max-width: 700px;
+  margin: 0 auto;
 }
 #contact .background {
   display: flex;
   min-height: 80vh;
+  padding: 20px;
 }
 #contact .container {
   margin: auto;
@@ -482,16 +485,16 @@ footer h2 #heart {
 #contact .screen-body {
   display: flex;
 }
-#contact .screen-body-item {
-  flex: 1;
-  padding: 50px;
-  flex-grow: 2;
-}
 #contact .screen-body-item.left {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
+}
+#contact .screen-body-item {
+  flex: 1;
+  padding: 25px;
+  flex-grow: 2;
 }
 #contact .app-title {
   color:#0d9488 ;
@@ -506,7 +509,7 @@ footer h2 #heart {
   position: absolute;
   left: 0;
   bottom: -10px;
-  width: 25px;
+  width: 46px;
   height: 4px;
   background-color: #0d9488;
 }
@@ -569,6 +572,21 @@ footer h2 #heart {
 }
 #contact .app-form-button:nth-of-type(2) {
   float: right;
+}
+.button-transparent {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(208, 219, 205, 0.8);/* Replace 'your-color' with your desired background color */
+  color: black; /* Replace 'your-text-color' with your desired text color */
+  border-radius: 50px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button-transparent:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px 2px #0d9488; /* Replace 'violet' with your desired glow color */
+  background-color: #303642; /* Replace 'your-hover-color' with your desired hover background color */
+  color: whitesmoke; /* Replace 'your-hover-text-color' with your desired hover text color */
 }
 @media screen and (max-width: 768px) {
   #contact .screen-body {
