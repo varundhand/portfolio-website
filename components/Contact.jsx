@@ -97,8 +97,9 @@ export default function Contact({darkMode}) {
         variants={screenVariant}
         animate={animation}
         initial="initial"
-        name="contact" method="POST" data-netlify="true"
+        name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"
       >
+        <input className='hidden' name='bot-field' />
         {success && 'Thank you, form has been submitted!'}
         {failure && 'Sorry, Something went wrong!'}
         <div className={`background ${darkMode ? "dark" : ""}`}>
