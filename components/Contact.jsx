@@ -126,9 +126,9 @@ export default function Contact({darkMode}) {
                     <span className='kanit font-semibold'>ME</span>
                   </div>
                   <div className="contact">
-                    <p className='kanit'>Wanna work together? </p>
-                    <p className='kanit'>Send me an email at </p>
-                    <a href="mailto:varundhand77@gmail.com" className="email kanit">
+                    <p className="kanit text-base sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl">Wanna work together? </p>
+                    <p className='kanit text-base sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Send me an email at </p>
+                    <a href="mailto:varundhand77@gmail.com" className="email kanit text-base sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl">
                       varundhand77@gmail.com
                     </a>
                   </div>

@@ -610,9 +610,21 @@ footer h2 #heart {
   background-color: red;
 }
 @media screen and (max-width: 768px) {
+  #contact .container {
+    width: 90%;
+    padding: 5px;
+  }
   #contact .screen-body {
     flex-direction: column;
- }
+    align-items: center;
+  }
+  #contact .screen-body-item {
+    padding: 25px 0;
+  }
+  
+  /* #contact .screen-body {
+    flex-direction: column;
+ } */
   #contact .contact {
     line-height: 2rem;
     font-size: 1.5rem;
