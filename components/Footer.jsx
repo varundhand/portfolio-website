@@ -1,17 +1,20 @@
 import React from 'react';
+// import backgroundImg from '../public/footer-bg.png'
 
-export default function Footer() {
+export default function Footer({darkMode}) {
   return (
    <>
-      <footer>
-        <h2>
-          Made with{' '}
+      <footer className={`footer-bg-light ${darkMode ? 'footer-bg-dark' : ''}`}>
+        <h2 className={`kanit text-xl pb-6  ${darkMode ? 'text-white' : 'text-black'  }`}>
+          Made with {' '}
           <svg
             id="heart"
             xmlns="http://www.w3.org/2000/svg"
-            width="35"
-            height="35"
+            width="40"
+            height="40"
             viewBox="0 0 512 512"
+            style={{ paddingBottom: '15px' }}
+
             >
             <title>Love</title>
             <path
