@@ -15,6 +15,8 @@ export default function Contact({darkMode}) {
     subject: '',
     message: '',
   });
+  // const [failure, setFailure] = useState(false);
+  // const [success, setSuccess] = useState(false);
 
   const animation = useAnimation();
   const [ref, inView, entry] = useInView({ threshold: 0.3, triggerOnce: true });
@@ -45,9 +47,11 @@ export default function Contact({darkMode}) {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encode({ 'form-name': 'contact', ...formState }),
       });
-      setFormState(initialState); 
+      // setSuccess(true);
+      setFormState(initialState); // * State is not clearing up!
     } catch (error) {
       console.error(error);
+      // setFailure(true);
     }
   };
 
@@ -96,6 +100,8 @@ export default function Contact({darkMode}) {
         name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"
       >
         <input className='hidden' name='bot-field' />
+        {/* {success && 'Thank you, form has been submitted!'}
+        {failure && 'Sorry, Something went wrong!'} */}
         <div className={`background ${darkMode ? "dark" : ""}`}>
           <div className={`container m-5 ${darkMode ? "dark" : ""}`}>
             <div className="screen ">
