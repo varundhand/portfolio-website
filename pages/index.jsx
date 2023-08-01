@@ -15,6 +15,8 @@ import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
+import web5 from "../public/web5.png";
+import web6 from "../public/web6.png";
 import varun from '../public/profile.JPG'
 // import blob1 from "../public/svg/blob1.svg";
 import blob from '../public/svg/'
@@ -179,11 +181,11 @@ export default function Home() {
                     width={"100%"}
                     height={"100%"}
                     layout="responsive"
-                    src={web2}
+                    src={web6}
                   />
                   <div className="absolute top-4 right-4 flex gap-3">
                     <a
-                      href="https://github.com/varundhand/expense-tracker"
+                      href="https://github.com/varundhand/Chat-app"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -193,7 +195,7 @@ export default function Home() {
                       />
                     </a>
                     <a
-                      href="https://expense-tracker-webapp-react.netlify.app/"
+                      href="https://chatroom-webapp.netlify.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -205,18 +207,14 @@ export default function Home() {
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 top-2/3 bg-black bg-opacity-50 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                     <h4 className="text-5xl font-bold mb-2 text-teal-300 font-burtons font-bold john">
-                      Expense Tracker
+                      Real-time Chat App
                     </h4>
                     <p className="text-2xl text-gray-200 font-burtons mayer">
-                      Track your income and expenses effortlessly with a
-                      minimalist React web app. Gain a clear overview of your
-                      financial balances and easily add or subtract income and
-                      expenses. Stay organized and manage your budgets
-                      effectively with this user-friendly expense tracker.
+                    A modern and interactive real-time chat application built with Vite and React. Leveraging the power of Appwrite, it provides seamless user authentication, allowing users to login securely. The app offers a delightful chat experience with real-time messaging. User data is persistently stored for a seamless experience across sessions.
                     </p>
                   </div>
                 </div>
-              </div>
+              </div>            
               <div className="basis-1/3 flex-1 relative">
                 <div className="group">
                   <Image
@@ -269,11 +267,11 @@ export default function Home() {
                     width={"100%"}
                     height={"100%"}
                     layout="responsive"
-                    src={web4}
+                    src={web2}
                   />
                   <div className="absolute top-4 right-4 flex gap-3">
                     <a
-                      href="https://github.com/varundhand/shopping-cart-rtk"
+                      href="https://github.com/varundhand/expense-tracker"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -283,7 +281,7 @@ export default function Home() {
                       />
                     </a>
                     <a
-                      href="https://shopping-cart-rtk.netlify.app/"
+                      href="https://expense-tracker-webapp-react.netlify.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -295,18 +293,19 @@ export default function Home() {
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 top-2/3 bg-black bg-opacity-50 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                     <h4 className="text-5xl font-bold mb-2 text-teal-300 font-burtons font-bold john">
-                      Shopping Cart Webpage
+                      Expense Tracker
                     </h4>
                     <p className="text-2xl text-gray-200 font-burtons mayer">
-                      Discover a seamless shopping experience with Redux
-                      Toolkit. Effortlessly add, remove, and manage items in
-                      your cart while enjoying automatic total cost calculation.
-                      Experience hassle-free online shopping with advanced state
-                      management.
+                      Track your income and expenses effortlessly with a
+                      minimalist React web app. Gain a clear overview of your
+                      financial balances and easily add or subtract income and
+                      expenses. Stay organized and manage your budgets
+                      effectively with this user-friendly expense tracker.
                     </p>
                   </div>
                 </div>
               </div>
+              
             </div>
           </section>
         </main>
