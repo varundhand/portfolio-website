@@ -6,6 +6,7 @@ import {
   AiFillGithub,
   AiOutlineGlobal,
 } from "react-icons/ai";
+import {FaHashnode} from 'react-icons/fa6'
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import { ViewportProvider } from "../hooks/useViewport";
@@ -110,6 +111,13 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   <AiFillGithub className="enlarge" />
+                </a>
+                <a
+                  href="https://codewithvroon.hashnode.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaHashnode className="enlarge" />
                 </a>
               </div>
               <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 profile">
