@@ -16,7 +16,8 @@ import REACT from '../public/svg/react.svg';
 import REDUX from '../public/svg/redux.svg';
 // import GRAPHQL from '../public/svg/graphql.svg';
 import JAVASCRIPT from '../public/svg/javascript.svg';
-// import MONGODB from '../public/svg/mongodb.svg';
+import MONGODB from '../public/svg/mongodb.svg';
+import NEXTJS from '../public/svg/nextjs.svg'
 // import WEBPACK from '../public/svg/webpack.svg';
 // import NODE from '../public/svg/node.svg';
 import TYPESCRIPT from '../public/svg/typescript.svg';
@@ -40,11 +41,13 @@ export default function Toolkit({darkMode}) {
     JAVASCRIPT,
     TYPESCRIPT,
     REACT,
+    NEXTJS,
     REDUX,
     DJANGO,
-    GIT,
+    MONGODB,
     GITHUB,
     VSCODE,
+    GIT,
   };
   
   // * Hooks

@@ -83,7 +83,7 @@ export default function Home() {
                 technical finesse, crafting websites that captivate and resonate
                 with audiences. Join me down below and let's get cracking!
               </p>
-              <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+              <div className="text-5xl flex justify-center sm:gap-16 gap-4 py-3 text-gray-600 dark:text-gray-400">
                 <a
                   href="https://twitter.com/CodeWithVroon"
                   target="_blank"
@@ -121,7 +121,12 @@ export default function Home() {
                 </a>
               </div>
               <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 profile">
-                <Image src={varun} layout="fill" objectFit="cover" />
+                <Image 
+                  src={varun} 
+                  layout="fill" 
+                  objectFit="cover" 
+                  className="rounded-lg object-cover "
+                />
               </div>
             </div>
           </section>
