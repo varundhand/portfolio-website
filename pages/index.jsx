@@ -48,8 +48,8 @@ export default function Home() {
         <link rel="icon" href="/yeet.ico" />
       </Head>
       <ViewportProvider>
-        <ParticlesBackground darkMode={darkMode} />
-        <main className={`px-10  background ${darkMode ? "dark" : ""} md:px-20 lg:px-40 relative z-30`} >
+        {!darkMode &&  <ParticlesBackground />}
+        <main className={`px-10  background ${darkMode ? "bg-slate-900 z-20" : "z-30"} md:px-20 lg:px-40 relative`} >
           <section className="min-h-screen">
             <nav className="py-10 mb-12 flex justify-between dark:text-white">
               <h1 className="sm:text-sm md:text-base lg:text-2xl font-burtons  font-bold ">developedbyvroon</h1>
@@ -323,7 +323,7 @@ export default function Home() {
           </section>
         </main>
         <Contact className='pb-10' darkMode={darkMode} />
-        <Footer darkMode={darkMode}/>
+        <Footer className='' darkMode={darkMode}/>
       </ViewportProvider>
     </div>
   );

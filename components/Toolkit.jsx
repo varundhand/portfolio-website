@@ -27,7 +27,7 @@ import DJANGO from '../public/svg/django.svg'
 import PYTHON from '../public/svg/python.svg'
 
 
-console.log(VSCODE);
+// console.log(VSCODE);
 
 export default function Toolkit({darkMode}) {
   const skills = {

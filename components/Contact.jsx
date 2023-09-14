@@ -88,7 +88,7 @@ export default function Contact({darkMode}) {
       },
     },
   };
-  console.log(darkMode)
+  // console.log(darkMode)
   return (
     <section id="contact" className='z-30'>
       <motion.form
@@ -102,7 +102,7 @@ export default function Contact({darkMode}) {
         <input className='hidden' name='bot-field' />
         {/* {success && 'Thank you, form has been submitted!'}
         {failure && 'Sorry, Something went wrong!'} */}
-        <div className={`background ${darkMode ? "dark" : ""}`}>
+        <div className={`background ${darkMode ? "bg-slate-900" : ""}`}>
           <div className={`container m-5 ${darkMode ? "dark" : ""}`}>
             <div className="screen ">
               <div className={`screen-header  ${darkMode ? "dark" : ""}`}>

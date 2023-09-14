@@ -4,15 +4,15 @@ import { loadFull } from "tsparticles";
 
 const ParticlesBackground = ({darkMode }) => {
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
+    // console.log(engine);
     await loadFull(engine);
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
+    // await console.log(container);
   }, []);
   return (
-    <div className="w-full h-full absolute top-0 left-0 pointer-events-none " style={{ zIndex: -10 }} >
+    <div className="w-full h-full absolute top-0 left-0 pointer-events-none" style={{ zIndex: 0 }} >
       <Particles
         className="w-full h-full"
         id="tsparticles"
@@ -28,7 +28,7 @@ const ParticlesBackground = ({darkMode }) => {
                     }
                   },
                   color: {
-                    value: "#44d4c8"
+                    value: darkMode ? '#c3c0c0' : '#84ecf9',
                   },
                   shape: {
                     type: "polygon",
@@ -87,45 +87,45 @@ const ParticlesBackground = ({darkMode }) => {
                     }
                   }
                 },
-                interactivity: {
-                  detect_on: "canvas",
-                  events: {
-                    onhover: {
-                      enable: true,
-                      mode: "repulse"
-                    },
-                    onclick: {
-                      enable: false,
-                      mode: "repulse"
-                    },
-                    resize: true
-                  },
-                  modes: {
-                    grab: {
-                      distance: 400,
-                      line_linked: {
-                        opacity: 1
-                      }
-                    },
-                    bubble: {
-                      distance: 400,
-                      size: 40,
-                      duration: 2,
-                      opacity: 8,
-                      speed: 3
-                    },
-                    repulse: {
-                      distance: 200,
-                      duration: 0.4
-                    },
-                    push: {
-                      particles_nb: 4
-                    },
-                    remove: {
-                      particles_nb: 2
-                    }
-                  }
-                },
+                // interactivity: {
+                //   detect_on: "canvas",
+                //   events: {
+                //     onhover: {
+                //       enable: true,
+                //       mode: "repulse"
+                //     },
+                //     onclick: {
+                //       enable: false,
+                //       mode: "repulse"
+                //     },
+                //     resize: true
+                //   },
+                //   modes: {
+                //     grab: {
+                //       distance: 400,
+                //       line_linked: {
+                //         opacity: 1
+                //       }
+                //     },
+                //     bubble: {
+                //       distance: 400,
+                //       size: 40,
+                //       duration: 2,
+                //       opacity: 8,
+                //       speed: 3
+                //     },
+                //     repulse: {
+                //       distance: 200,
+                //       duration: 0.4
+                //     },
+                //     push: {
+                //       particles_nb: 4
+                //     },
+                //     remove: {
+                //       particles_nb: 2
+                //     }
+                //   }
+                // },
                 retina_detect: true
         }}
       />

@@ -604,8 +604,8 @@ footer h2 #heart {
   color: whitesmoke; /* Replace 'your-hover-text-color' with your desired hover text color */
 }
 .background.dark {
-  background-color:#111827 ;
-  z-index: -10;
+  /* background-color:#111827 ; */
+  /* z-index: -20; */
 }
 /* .background.light {
   background-color:#fbf0d9 ;
