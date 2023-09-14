@@ -10,24 +10,22 @@ import {FaHashnode} from 'react-icons/fa6'
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import { ViewportProvider } from "../hooks/useViewport";
-import deved from "../public/dev-ed-wave.png";
 import Image from "next/image";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
+// import web4 from "../public/web4.png";
+// import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import varun from '../public/profile.JPG'
 // import blob1 from "../public/svg/blob1.svg";
-import blob from '../public/svg/'
+// import blob from '../public/svg/'
 import Toolkit from "../components/Toolkit";
 // import Image from "next/image";
 // import { ReactSVG } from "react-svg";
-import Blob1Component from '../public/svg/blob1.svg'
+// import Blob1Component from '../public/svg/blob1.svg'
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
-import Particles from "react-particles";
 import ParticlesBackground from "../components/ParticlesBackground";
 
 export default function Home() {
