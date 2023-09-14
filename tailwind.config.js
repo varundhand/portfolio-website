@@ -13,6 +13,10 @@ module.exports = {
         lobsterTwo: "lobster-two",
       },
     },
+    // colors: {
+    //   lightBg: "#fbf0d9",
+    //   darkBg: "#111827",
+    // },
   },
   plugins: [],
 };

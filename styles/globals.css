@@ -605,7 +605,12 @@ footer h2 #heart {
 }
 .background.dark {
   background-color:#111827 ;
+  z-index: -10;
 }
+/* .background.light {
+  background-color:#fbf0d9 ;
+  z-index: -20;
+} */
 #contact.screen-header.dark{
   background-color: red;
 }
@@ -650,3 +655,7 @@ footer h2 #heart {
     padding: 0;
  }
 }
+
+/* #tsparticles {
+  pointer-events: none;
+} */

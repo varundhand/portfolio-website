@@ -90,7 +90,7 @@ export default function Contact({darkMode}) {
   };
   console.log(darkMode)
   return (
-    <section id="contact">
+    <section id="contact" className='z-30'>
       <motion.form
         onSubmit={handleSubmit}
         ref={ref}
