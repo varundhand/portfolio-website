@@ -19,7 +19,6 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-intersection-observer": "^8.31.0",
-    "react-particles": "^2.12.2",
     "react-svg": "^16.1.15",
     "react-tsparticles": "^2.12.2",
     "tsparticles": "^2.12.0",
