@@ -223,7 +223,7 @@ export default function Home() {
                       Real-time Chat App
                     </h4>
                     <p className="text-2xl text-gray-200 font-burtons mayer">
-                    A modern and interactive real-time chat application built with Vite and React. Leveraging the power of Appwrite, it provides seamless user authentication, allowing users to login securely. The app offers a delightful chat experience with real-time messaging. User data is persistently stored for a seamless experience across sessions.
+                    A modern and interactive real-time chat application built with React. Leveraging the power of Appwrite, it provides seamless user authentication. The app offers a delightful chat experience with real-time messaging & seamless data storage across sessions.
                     </p>
                   </div>
                 </div>
@@ -284,7 +284,7 @@ export default function Home() {
                   />
                   <div className="absolute top-4 right-4 flex gap-3">
                     <a
-                      href="https://github.com/varundhand/expense-tracker"
+                      href="https://github.com/varundhand/CodeDiary"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -294,7 +294,7 @@ export default function Home() {
                       />
                     </a>
                     <a
-                      href="https://expense-tracker-webapp-react.netlify.app/"
+                      href="https://code-diary.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -306,14 +306,10 @@ export default function Home() {
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 top-2/3 bg-black bg-opacity-50 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                     <h4 className="text-5xl font-bold mb-2 text-teal-300 font-burtons font-bold john">
-                      Expense Tracker
+                      CodeDiary
                     </h4>
                     <p className="text-2xl text-gray-200 font-burtons mayer">
-                      Track your income and expenses effortlessly with a
-                      minimalist React web app. Gain a clear overview of your
-                      financial balances and easily add or subtract income and
-                      expenses. Stay organized and manage your budgets
-                      effectively with this user-friendly expense tracker.
+                    CodeDiary – Your dedicated coding platform! Join our vibrant community of tech enthusiasts to share your coding journey, insights, and tips. Whether you're a beginner or a seasoned developer, find inspiration, success, and a collaborative space to thrive on CodeDiary.
                     </p>
                   </div>
                 </div>
