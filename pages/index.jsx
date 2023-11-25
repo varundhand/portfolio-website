@@ -16,6 +16,7 @@ import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 // import web4 from "../public/web4.png";
 // import web5 from "../public/web5.png";
+import web20 from "../public/web-20.png"
 import web6 from "../public/web6.png";
 import varun from '../public/profile.JPG'
 // import blob1 from "../public/svg/blob1.svg";
@@ -148,11 +149,11 @@ export default function Home() {
                     width={"100%"}
                     height={"100%"}
                     layout="responsive"
-                    src={web1}
+                    src={web20}
                   />
                   <div className="absolute top-4 right-4 flex gap-3">
                     <a
-                      href="https://github.com/varundhand/Compresso"
+                      href="https://github.com/varundhand/DevSearch"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -162,7 +163,7 @@ export default function Home() {
                       />
                     </a>
                     <a
-                      href="https://compresso.netlify.app/"
+                      href="https://github.com/varundhand/DevSearch"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -175,14 +176,10 @@ export default function Home() {
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 top-2/3 bg-black bg-opacity-50 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                     <h4 className="text-5xl font-bold mb-2 text-teal-300 font-burtons font-bold john">
-                      Compresso
+                    DevSearch
                     </h4>
                     <p className="text-2xl text-gray-200 font-burtons mayer">
-                      Compresso simplifies reading by providing clear and
-                      concise summaries of lengthy articles. Save time and
-                      effort with this free, open-source tool that prioritizes
-                      data security and privacy. Stay informed and grasp the
-                      main points effortlessly with Compresso.
+                    Discover and Connect with DevSearch: The ultimate platform for developers worldwide. Showcase your skills, highlight your expertise, and connect with like-minded professionals from across the globe. Find new opportunities, collaborate on projects, and expand your network. DevSearch empowers developers to thrive in a supportive community.
                     </p>
                   </div>
                 </div>
