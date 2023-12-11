@@ -142,18 +142,18 @@ export default function Home() {
 
             <h3 className="text-3xl pt-1 dark:text-white font-burtons font-bold">PROJECTS</h3>
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-              <div className="basis-1/3 flex-1 relative">
+            <div className="basis-1/3 flex-1 relative">
                 <div className="group">
                   <Image
                     className="rounded-lg object-cover"
                     width={"100%"}
                     height={"100%"}
                     layout="responsive"
-                    src={web20}
+                    src={web1}
                   />
                   <div className="absolute top-4 right-4 flex gap-3">
                     <a
-                      href="https://github.com/varundhand/DevSearch"
+                      href="https://github.com/varundhand/Compresso"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -163,7 +163,7 @@ export default function Home() {
                       />
                     </a>
                     <a
-                      href="https://github.com/varundhand/DevSearch"
+                      href="https://compresso.netlify.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -176,14 +176,19 @@ export default function Home() {
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 top-2/3 bg-black bg-opacity-50 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                     <h4 className="text-5xl font-bold mb-2 text-teal-300 font-burtons font-bold john">
-                    DevSearch
+                      Compresso
                     </h4>
                     <p className="text-2xl text-gray-200 font-burtons mayer">
-                    Discover and Connect with DevSearch: The ultimate platform for developers worldwide. Showcase your skills, highlight your expertise, and connect with like-minded professionals from across the globe. Find new opportunities, collaborate on projects, and expand your network. DevSearch empowers developers to thrive in a supportive community.
+                      Compresso simplifies reading by providing clear and
+                      concise summaries of lengthy articles. Save time and
+                      effort with this free, open-source tool that prioritizes
+                      data security and privacy. Stay informed and grasp the
+                      main points effortlessly with Compresso.
                     </p>
                   </div>
                 </div>
               </div>
+
               <div className="basis-1/3 flex-1 relative">
                 <div className="group">
                   <Image
