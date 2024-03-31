@@ -25,6 +25,8 @@ import VSCODE from '../public/svg/vscode.svg';
 import TAILWIND from '../public/svg/tailwind.svg'
 import DJANGO from '../public/svg/django.svg'
 import PYTHON from '../public/svg/python.svg'
+import AWS from '../public/svg/aws.svg'
+import DOCKER from '../public/svg/docker.svg'
 
 
 // console.log(VSCODE);
@@ -48,6 +50,8 @@ export default function Toolkit({darkMode}) {
     GITHUB,
     VSCODE,
     GIT,
+    AWS,
+    DOCKER,
   };
   
   // * Hooks

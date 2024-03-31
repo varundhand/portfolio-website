@@ -434,7 +434,7 @@ footer h2 #heart {
 #contact .background {
   display: flex;
   min-height: 80vh;
-  padding: 44px;
+  /* padding: 44px; */
 }
 #contact .container {
   width: 700px;

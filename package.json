@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "^13.4.4",
+    "@react-hook/media-query": "^1.1.1",
     "clsx": "^2.1.0",
     "firebase": "^9.10.0",
     "framer-motion": "^11.0.22",
