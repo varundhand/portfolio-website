@@ -43,6 +43,8 @@ export default function Home() {
     const handleRsize = () => {
       setIsDesktop(window.matchMedia('(min-width: 768px)').matches);
     };
+
+    // event listener resize is done
     window.addEventListener('resize', handleRsize);
   }, []);
 
@@ -102,6 +104,8 @@ export default function Home() {
               layout="fill" 
               objectFit="cover" 
               className="rounded-lg object-cover "
+              priority // Preload the image
+              // loading="lazy" //  lazy loading attribute
             />
           </div>
         </div>
@@ -125,6 +129,7 @@ export default function Home() {
                   height={"100%"}
                   layout="responsive"
                   src={web1}
+                  priority
                 />
                 <div className="absolute top-4 right-4 flex gap-3">
                   <a
@@ -154,11 +159,7 @@ export default function Home() {
                     Compresso
                   </h4>
                   <p className="text-2xl text-gray-200 font-burtons mayer">
-                    Compresso simplifies reading by providing clear and
-                    concise summaries of lengthy articles. Save time and
-                    effort with this free, open-source tool that prioritizes
-                    data security and privacy. Stay informed and grasp the
-                    main points effortlessly with Compresso.
+                  Compresso simplifies reading by providing clear and concise summaries of lengthy articles. Save time and effort with this free, open-source tool.
                   </p>
                 </div>
               </div>
@@ -172,6 +173,7 @@ export default function Home() {
                   height={"100%"}
                   layout="responsive"
                   src={web6}
+                  priority
                 />
                 <div className="absolute top-4 right-4 flex gap-3">
                   <a
@@ -200,7 +202,7 @@ export default function Home() {
                     Real-time Chat App
                   </h4>
                   <p className="text-2xl text-gray-200 font-burtons mayer">
-                  A modern and interactive real-time chat application built with React. Leveraging the power of Appwrite, it provides seamless user authentication. The app offers a delightful chat experience with real-time messaging & seamless data storage across sessions.
+                  A modern and interactive real-time chat application built with React, leveraging the power of Appwrite for seamless user authentication.
                   </p>
                 </div>
               </div>
@@ -213,6 +215,7 @@ export default function Home() {
                   height={"100%"}
                   layout="responsive"
                   src={web3}
+                  priority
                 />
                 <div className="absolute top-4 right-4 flex gap-3">
                   <a
@@ -241,11 +244,7 @@ export default function Home() {
                     Rock Paper Scissors
                   </h4>
                   <p className="text-2xl text-gray-200 font-burtons mayer">
-                    Experience the timeless game of Rock Paper Scissors
-                    implemented using pure JavaScript. Test your strategy and
-                    luck as you engage in this classic game of choices. Enjoy
-                    the simplicity and excitement of this interactive web
-                    application.
+                  Experience the timeless game of Rock Paper Scissors implemented using pure JavaScript. Test your strategy and luck in this classic game of choices.
                   </p>
                 </div>
               </div>
@@ -258,6 +257,7 @@ export default function Home() {
                   height={"100%"}
                   layout="responsive"
                   src={web2}
+                  priority
                 />
                 <div className="absolute top-4 right-4 flex gap-3">
                   <a
@@ -286,7 +286,7 @@ export default function Home() {
                     CodeDiary
                   </h4>
                   <p className="text-2xl text-gray-200 font-burtons mayer">
-                  CodeDiary – Your dedicated coding platform! Join our vibrant community of tech enthusiasts to share your coding journey, insights, and tips. Whether you're a beginner or a seasoned developer, find inspiration, success, and a collaborative space to thrive on CodeDiary.
+                  CodeDiary is your dedicated coding platform, offering a vibrant community of tech enthusiasts sharing insights & tips. Join us to find inspiration & success in your journey.
                   </p>
                 </div>
               </div>
