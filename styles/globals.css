@@ -448,6 +448,9 @@ footer h2 #heart {
   background: snow ;
   border-radius: 15px;
 }
+/* #contact .screen .dark{
+  background: snow ; 
+} */
 #contact .screen:after {
   content: '';
   display: block;
@@ -467,6 +470,9 @@ footer h2 #heart {
   background: #d0dbcd;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+#contact .screen-header.dark {
+  /* background-color: #333; Dark mode background color */
 }
 #contact .screen-header-left {
   margin-right: auto;
@@ -600,16 +606,16 @@ footer h2 #heart {
 }
 
 .button-transparent:hover {
-  transform: translateY(-3px);
+  transform: translateY(-1px);
   box-shadow: 0 0 10px 2px #0d9488; /* Replace 'violet' with your desired glow color */
   background-color: #4a4f59; /* Replace 'your-hover-color' with your desired hover background color */
   color: whitesmoke; /* Replace 'your-hover-text-color' with your desired hover text color */
 }
-.background.dark {
-  /* background-color:#111827 ; */
-  /* z-index: -20; */
+/* .background.dark {
+  background-color:#111827 ; 
+  z-index: -20; 
 }
-/* .background.light {
+.background.light {
   background-color:#fbf0d9 ;
   z-index: -20;
 } */

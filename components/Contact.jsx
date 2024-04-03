@@ -88,7 +88,7 @@ export default function Contact({darkMode}) {
       },
     },
   };
-  // console.log(darkMode)
+  //TODO: add darkmode classes to it 
   return (
     <section id="contact" className='z-30'>
       <motion.form
@@ -105,7 +105,7 @@ export default function Contact({darkMode}) {
         <div className={`background ${darkMode ? "bg-slate-900" : ""}`}>
           {/* TODO: make mobile responsive */}
           <div className={`container m-5 ${darkMode ? "dark" : ""}`}> 
-            <div className="screen ">
+            <div className={`screen ${darkMode ? "dark" : ""}`}>
               <div className={`screen-header  ${darkMode ? "dark" : ""}`}>
                 <div className="screen-header-left">
                   <div className="screen-header-button close"></div>

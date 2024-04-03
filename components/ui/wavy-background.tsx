@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { createNoise3D } from "simplex-noise";
 
 export const WavyBackground = ({
+  darkMode,
   children,
   className,
   containerClassName,
@@ -106,7 +107,7 @@ export const WavyBackground = ({
   return (
     <div
       className={cn(
-        "flex flex-col justify-center relative",
+        `flex flex-col justify-center relative ${darkMode ? "bg-slate-900" : ""} `,
         containerClassName
       )}
     >
