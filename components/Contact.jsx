@@ -103,7 +103,8 @@ export default function Contact({darkMode}) {
         {/* {success && 'Thank you, form has been submitted!'}
         {failure && 'Sorry, Something went wrong!'} */}
         <div className={`background ${darkMode ? "bg-slate-900" : ""}`}>
-          <div className={`container m-5 ${darkMode ? "dark" : ""}`}>
+          {/* TODO: make mobile responsive */}
+          <div className={`container m-5 ${darkMode ? "dark" : ""}`}> 
             <div className="screen ">
               <div className={`screen-header  ${darkMode ? "dark" : ""}`}>
                 <div className="screen-header-left">

@@ -33,6 +33,8 @@ import ParticlesBackground from "../components/ParticlesBackground";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "../components/ui/tracing-beam";
 
+import { WavyBackground } from "../components/ui/wavy-background";
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
