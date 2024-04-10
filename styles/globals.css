@@ -89,6 +89,7 @@
   }
   .mayer {
     font-size: 1.8rem;
+    /* line-height: 1rem; */
     padding-bottom: 0;
     margin-bottom: 0;
     display: -webkit-box;
@@ -106,6 +107,7 @@
   }
   .mayer {
     font-size: 1rem;
+    /* line-height: 1rem; */
     padding-bottom: 0;
     margin-bottom: 0;
     display: -webkit-box;
@@ -123,6 +125,7 @@
   }
   .mayer {
     font-size: 1rem;
+    /* line-height: 1.2rem; */
     padding-bottom: 0;
     margin-bottom: 0;
     display: -webkit-box;
@@ -140,7 +143,9 @@
   }
   .mayer {
     font-size: 1rem;
+    line-height: 1.7rem;
     padding-bottom: 0;
+    padding-top: 5px;
     margin-bottom: 0;
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -156,7 +161,8 @@
     margin-bottom: 1rem;
   }
   .mayer {
-    font-size: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
     padding-bottom: 0;
     margin-bottom: 0;
     display: -webkit-box;
