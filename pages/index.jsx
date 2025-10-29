@@ -19,6 +19,7 @@ import web3 from "../public/web3.png";
 import web20 from "../public/web-20.png"
 import web6 from "../public/web6.png";
 import varun from '../public/profile.JPG'
+import varun2 from '../public/profile2.JPG'
 // import blob1 from "../public/svg/blob1.svg";
 // import blob from '../public/svg/'
 import Toolkit from "../components/Toolkit";
@@ -101,13 +102,14 @@ export default function Home() {
             </a>
           </div>
           <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 profile">
-            <Image 
-              src={varun} 
-              layout="fill" 
-              objectFit="cover" 
-              className="rounded-lg object-cover "
+            <Image
+              src={varun2}
+              layout="fill" // use fill so the image covers the container and objectPosition works as expected
+              objectFit="cover"
+              objectPosition="bottom center"
+              className="rounded-lg object-cover zoomed-in-image"
               priority // Preload the image
-              // loading="lazy" //  lazy loading attribute
+              alt="Varun Dhand profile"
             />
           </div>
         </div>

@@ -673,3 +673,17 @@ footer h2 #heart {
 /* #tsparticles {
   pointer-events: none;
 } */
+.zoomed-in-image {
+  /* Slightly zoomed by default so the image appears "closer" inside the rounded container.
+     Use transform-origin to focus the zoom on the bottom center so the bottom of the photo is visible.
+  */
+  transform: scale(1.5);
+  transform-origin: bottom center;
+  transition: transform 0.35s ease-in-out;
+  will-change: transform;
+}
+
+.zoomed-in-image:hover {
+  /* Increase zoom on hover for a stronger effect */
+  transform: scale(1.3);
+}
