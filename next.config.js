@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    domains: ['res.cloudinary.com'], // This allows images from Cloudinary
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,

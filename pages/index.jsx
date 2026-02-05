@@ -16,10 +16,11 @@ import Image from "next/image";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
-import web20 from "../public/web-20.png"
+import webBlinkr from "../public/web-blinkr.png"
+// import web20 from "../public/web-20.png"
 import web6 from "../public/web6.png";
-import varun from '../public/profile.JPG'
-import varun2 from '../public/profile2.png'
+// import varun from '../public/profile.JPG'
+// import varun2 from '../public/profile2.png'
 // import blob1 from "../public/svg/blob1.svg";
 // import blob from '../public/svg/'
 import Toolkit from "../components/Toolkit";
@@ -35,6 +36,11 @@ import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "../components/ui/tracing-beam";
 
 import { WavyBackground } from "../components/ui/wavy-background";
+
+const cloudinaryLoader = ({ src, width, quality }) => {
+  const normalizedSrc = src.startsWith("/") ? src.slice(1) : src;
+  return `https://res.cloudinary.com/dwtisfxie/image/upload/f_auto,q_auto,w_${width},q_${quality || 75}/${normalizedSrc}`;
+};
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -103,13 +109,18 @@ export default function Home() {
           </div>
           <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 profile">
             <Image
-              src={varun2}
+              // IMPORTANT: Add '/f_auto,q_auto/' right after 'upload/'
+              loader={cloudinaryLoader}
+              src="v1770253597/profile2_sm6lgx.png"
               layout="fill" // use fill so the image covers the container and objectPosition works as expected
               objectFit="cover"
               objectPosition="bottom center"
               className="rounded-lg object-cover zoomed-in-image"
               priority // Preload the image
               alt="Varun Dhand profile"
+
+              //This tells the browser how wide the image is at different screens
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
         </div>
@@ -160,7 +171,7 @@ export default function Home() {
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 top-2/3 bg-black bg-opacity-50 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                   <h4 className="text-5xl font-bold mb-2 text-teal-300 font-burtons font-bold john">
-                    Compresso
+                    Compresso ☕️
                   </h4>
                   <p className="text-2xl text-gray-200 font-burtons mayer">
                   Compresso simplifies reading by providing clear and concise summaries of lengthy articles. Save time and effort with this free, open-source tool.
@@ -169,6 +180,48 @@ export default function Home() {
               </div>
             </div>
 
+            <div className="basis-1/3 flex-1 relative">
+              <div className="group">
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={webBlinkr}
+                  priority
+                />
+                <div className="absolute top-4 right-4 flex gap-3">
+                  <a
+                    href="https://github.com/varundhand/Blinkr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AiFillGithub
+                      className="text-4xl transition-transform duration-300 enlarge-glow-github"
+                      title="Github Repo Link"
+                    />
+                  </a>
+                  <a
+                    href="https://blinkr-web.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AiOutlineGlobal
+                      className="text-4xl transition-transform duration-300 enlarge-glow-global"
+                      title=""
+                    />
+                  </a>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 top-2/3 bg-black bg-opacity-50 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+                  <h4 className="text-5xl font-bold mb-2 text-teal-300 font-burtons font-bold john">
+                    Blinkr 👁️‍🗨️
+                  </h4>
+                  <p className="text-2xl text-gray-200 font-burtons mayer">
+                  A smart eye wellness app that reminds you to blink and take short breaks built with Electron React and Vite available for macOS and Windows
+                  </p>
+                </div>
+              </div>
+            </div>
             <div className="basis-1/3 flex-1 relative">
               <div className="group">
                 <Image
@@ -203,7 +256,7 @@ export default function Home() {
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 top-2/3 bg-black bg-opacity-50 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                   <h4 className="text-5xl font-bold mb-2 text-teal-300 font-burtons font-bold john">
-                    Real-time Chat App
+                    Real-time Chat App 💬
                   </h4>
                   <p className="text-2xl text-gray-200 font-burtons mayer">
                   A modern and interactive real-time chat application built with React, leveraging the power of Appwrite for seamless user authentication.
@@ -211,48 +264,6 @@ export default function Home() {
                 </div>
               </div>
             </div>            
-            <div className="basis-1/3 flex-1 relative">
-              <div className="group">
-                <Image
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                  src={web3}
-                  priority
-                />
-                <div className="absolute top-4 right-4 flex gap-3">
-                  <a
-                    href="https://github.com/varundhand/RockPaperScissors-VanillaJs"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <AiFillGithub
-                      className="text-4xl transition-transform duration-300 enlarge-glow-github"
-                      title="Github Repo Link"
-                    />
-                  </a>
-                  <a
-                    href="https://rock-paper-scissors-app-js.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <AiOutlineGlobal
-                      className="text-4xl transition-transform duration-300 enlarge-glow-global"
-                      title=""
-                    />
-                  </a>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 top-2/3 bg-black bg-opacity-50 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-                  <h4 className="text-5xl font-bold mb-2 text-teal-300 font-burtons font-bold john">
-                    Rock Paper Scissors
-                  </h4>
-                  <p className="text-2xl text-gray-200 font-burtons mayer">
-                  Experience the timeless game of Rock Paper Scissors implemented using pure JavaScript. Test your strategy and luck in this classic game of choices.
-                  </p>
-                </div>
-              </div>
-            </div>
             <div className="basis-1/3 flex-1 relative">
               <div className="group">
                 <Image
@@ -287,7 +298,7 @@ export default function Home() {
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 top-2/3 bg-black bg-opacity-50 text-white p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                   <h4 className="text-5xl font-bold mb-2 text-teal-300 font-burtons font-bold john">
-                    CodeDiary
+                    CodeDiary 📓
                   </h4>
                   <p className="text-2xl text-gray-200 font-burtons mayer">
                   CodeDiary is your dedicated coding platform, offering a vibrant community of tech enthusiasts sharing insights & tips. Join us to find inspiration & success in your journey.
